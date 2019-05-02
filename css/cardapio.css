@@ -28,7 +28,7 @@ body {
 		padding: 20px 0;
 	}
 
-	@media screen and (max-width: 800px)
+	@media screen and (max-width: 800px){
 header nav ul {
     display: none;
 	}
@@ -283,5 +283,6 @@ footer .social  {
 
 footer .social img {
 	width: 60%;
-
+}
+	}
  /**fim do footer **/
