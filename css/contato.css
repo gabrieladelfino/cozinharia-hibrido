@@ -1,0 +1,275 @@
+body {
+	font-family: 'Open Sans', 'Arial', sans-serif;
+		background-color: #ffffff;
+		color: #141F45;
+		line-height: 1.5;
+		font-weight: 300;
+}
+	.container {
+		max-width: 90%;
+		margin: 0 auto;
+	}
+
+/** só o header **/
+
+
+	header {
+		height: 97x;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    background-color: white;
+    box-shadow: 0 0 12px #edebe9;
+	}
+
+	header img {
+		padding: 20px 0;
+	}
+
+	@media screen and (max-width: 800px)
+header nav ul {
+    display: none;
+	}
+
+	ol, ul {
+		list-style: none;
+	}
+
+	header .container  {
+		margin-top: 31px;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	  align-content: center;
+		align-items: center;
+
+	}
+
+	header nav > ul {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-content: center;
+	align-items: center;
+	}
+
+	header nav > ul li {
+	position: relative;
+}
+
+@media screen and (max-width: 800px) {
+	header nav > ul {
+		display: none;
+	}
+}
+
+	header nav ul li a {
+		color: #141F45;
+		text-decoration: none;
+		font-size: 16px;
+		margin-left: 35px;
+		padding: 22px 8px;
+	}
+
+	header nav ul li a:hover {
+		color: #999;
+
+
+	}
+
+	header nav ul li a.active {
+		border-bottom: 3px solid #EED33E;
+
+	}
+
+
+/** submenu **/
+
+.menu ul.submenu {
+	display: none;
+	position: absolute;
+	left: 0;
+	list-style: none;
+	padding: 0;
+	background-color: #fff;
+
+}
+
+.menu ul.submenu li {
+	width:150px;
+	float: left;
+}
+
+.menu ul.submenu a {
+	display: block;
+	line-height: 48px;
+	margin-left: 0;
+	padding: 0 16px;
+	text-decoration: none;
+}
+
+.menu ul.submenu a:hover {
+	background-color: #f8f8f8;
+}
+
+/** fim do submenu **/
+
+/** fim do header **/
+
+/** seção id contato **/
+
+#contatos {
+	background-color: #f8f8f8;
+	padding-top: 200px;
+	padding-bottom: 80px;
+}
+
+#contatos .container h2 {
+	font-size: 40px;
+}
+
+#contatos .linha-amarela {
+	border-bottom: 3px solid #EED33E;
+	width: 100px;
+	height: 24px;
+	margin-bottom: 24px;
+}
+
+#contatos .divisao-colunas {
+	display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+}
+
+#contatos .container .divisao-colunas > p {
+	font-size: 18px;
+		margin-top: 5px;
+    margin-bottom: 12px;
+    font-weight: lighter;
+		color: #141F45;
+}
+
+/** parte esquerda **/
+
+#contatos .contato-esquerda {
+	width: 48%;
+	margin-right: 2px;
+}
+
+#contatos .contato-esquerda .esquerda-icones {
+	display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-content: center;
+	}
+
+#contatos .esquerda-icones img {
+	width: 4%;
+	margin-right: 8px;
+}
+
+/** parte direita **/
+
+#contatos .contato-direita {
+	width: 48%;
+	margin-left: 2px;
+}
+
+#contatos .negrito {
+	font-weight: 600;
+}
+
+iframe {
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+/** fim do id contato **/
+
+/** início do form **/
+
+#contatos .form {
+	display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-content: center;
+	width: 90%;
+}
+
+input[type=text], input[type=email], select {
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+		width: 90%;
+}
+
+.form #area-texto {
+	width: 90%;
+
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+}
+
+/** fim do form **/
+
+/** início do footer **/
+
+footer {
+	background: #F0DB48;
+	align-items: flex-start;
+	}
+
+
+footer .container {
+	align-content: center;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	padding-top: 20px;
+	padding-bottom: 20px;
+
+}
+
+footer .negrito {
+	font-weight: 700;
+}
+
+footer .rodape-endereco {
+	width: 48%;
+	margin-right: 2%;
+	/*margin-right: 2%;*/
+}
+
+footer .rodape-funcionamento {
+	width: 48%;
+	margin-left: 2%;
+	margin-right: 2%;
+	/*margin-right: 2%;*/
+}
+
+footer p {
+	font-size: 14px;
+	line-height: 1.5;
+}
+
+footer .social  {
+	width: 30%;
+	margin-left: 2%;
+	align-items: baseline;
+	/*align-content: ;*/
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+footer .social img {
+	width: 60%;
+
+ /**fim do footer **/
